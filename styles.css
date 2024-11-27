@@ -1,0 +1,550 @@
+/* General Styles */
+:root {
+    --primary-color: #007bff;
+    --secondary-color: #6c757d;
+    --background-color: #f8f9fa;
+    --text-color: #333;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    padding-top: 76px;
+}
+
+/* Navbar Styles */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    color: var(--primary-color) !important;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 0;
+    background-color: var(--background-color);
+}
+
+.section:nth-child(even) {
+    background-color: white;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 100px 0;
+    background-color: white;
+}
+
+.profile-image {
+    max-width: 80%;
+    border-radius: 50px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+/* Timeline Styles */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline-item {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+/* Achievement Cards */
+.achievement-card {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.achievement-card i {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+/* Contact Section */
+#contact {
+    background-color: white;
+}
+
+.contact-info {
+    padding: 20px;
+}
+
+.contact-info i {
+    color: var(--primary-color);
+    margin-right: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 60px 0 20px;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a {
+    color: white;
+    font-size: 24px;
+    margin-right: 15px;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+/* Form Styles */
+.form-control {
+    margin-bottom: 15px;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border: none;
+    padding: 10px 25px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Newsletter Form */
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+/* General Styles */
+:root {
+    --primary-color: #000000;
+    --secondary-color: #333333;
+    --background-color: #ffffff;
+    --text-color: #000000;
+    --accent-color: #666666;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.cursor-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--background-color) !important;
+    border-bottom: 1px solid var(--primary-color);
+    border-radius: 50px;
+
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.nav-link:hover::after {
+    transform: translateX(0);
+}
+
+
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--background-color);
+    position: relative;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #000000 25%, transparent 25%),
+                linear-gradient(-45deg, #000000 25%, transparent 25%);
+    background-size: 4px 4px;
+    opacity: 0.05;
+}
+
+
+
+/* Achievement Cards */
+.achievement-card {
+    background: var(--background-color);
+    border: 1px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+
+/* Footer */
+.footer {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+}
+
+.social-links a {
+    color: var(--background-color);
+    transition: transform 0.3s ease;
+    display: inline-block;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+/* General Styles */
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #cccccc;
+    --background-color: #000000;
+    --text-color: #ffffff;
+    --accent-color: #333333;
+    --hover-color: #1a1a1a;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    padding-top: 76px;
+}
+
+/* Custom Cursor */
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.cursor-dot {
+    width: 4px;
+    height: 4px;
+    background: var(--primary-color);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: var(--background-color) !important;
+    border-bottom: 1px solid var(--primary-color);
+    border-radius: 50px;
+
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    color: var(--primary-color) !important;
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 8px 15px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+
+    transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color) !important;
+}
+
+.nav-link {
+    color: var(--primary-color) !important;
+    margin: 0 5px;
+    padding: 8px 15px !important;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    border-color: var(--primary-color);
+    background-color: var(--hover-color);
+}
+
+.navbar-toggler {
+    border-color: var(--primary-color) !important;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(255, 255, 255, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+/* Section Styles */
+.section {
+    padding: 80px 0;
+    background-color: var(--background-color);
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--primary-color);
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 2px;
+    background-color: var(--primary-color);
+}
+
+/* Hero Section */
+.hero-section {
+    background-color: var(--background-color);
+    padding: 100px 0;
+}
+
+.hero-title {
+    color: var(--primary-color);
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-text {
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+}
+
+.profile-image {
+    max-width: 80%;
+    border-radius: 10px;
+    border: 3px solid var(--primary-color);
+    box-shadow: 0 0 20px rgba(255,255,255,0.1);
+}
+
+/* Timeline Styles */
+.timeline-item {
+    background: var(--accent-color);
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid var(--primary-color);
+}
+
+.timeline-item h4 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.timeline-item p {
+    color: var(--secondary-color);
+    margin-bottom: 5px;
+}
+
+/* Achievement Cards */
+.achievement-card {
+    background: var(--accent-color);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 30px;
+    border: 1px solid var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-card i {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.achievement-card h4 {
+    color: var(--primary-color);
+}
+
+.achievement-card p {
+    color: var(--secondary-color);
+}
+
+/* Contact Form */
+.form-control {
+    background-color: var(--accent-color);
+    border: 1px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 12px;
+}
+
+.form-control:focus {
+    background-color: var(--accent-color);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+    box-shadow: 0 0 0 0.25rem rgba(255,255,255,0.1);
+}
+
+.form-control::placeholder {
+    color: var(--secondary-color);
+}
+
+.btn {
+    padding: 10px 25px;
+    border: 2px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    border-color: var(--primary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    padding: 60px 0 20px;
+    border-top: 1px solid var(--primary-color);
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links a {
+    color: var(--secondary-color);
+    text-decoration: none;
+    padding: 5px 10px;
+    display: inline-block;
+    border: 1px solid transparent;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.social-links a {
+    color: var(--primary-color);
+    font-size: 24px;
+    margin-right: 15px;
+    transition: all 0.3s ease;
+    padding: 8px;
+    border: 1px solid transparent;
+    border-radius: 50px;
+}
+
+.social-links a:hover {
+    border-color: var(--primary-color);
+    transform: translateY(-3px);
+}
+
+.newsletter-form input {
+    background-color: var(--accent-color);
+    border: 1px solid
+     var(--primary-color);
+    color: var(--primary-color);
+    border-radius: 50px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+.newsletter-form input::placeholder {
+    color: var(--secondary-color);
+}
+
+.footer-bottom {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+    border-radius: 50px;
+    text-align: center;
+}
